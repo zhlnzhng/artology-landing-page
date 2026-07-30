@@ -8,7 +8,7 @@ ios_app_country                          : us
 appstore_link                            :
 playstore_link                           :
 presskit_download_link                   :
-app_icon                                 : assets/artology-mark.svg
+app_icon                                 : assets/artologylandingpageicon.png
 app_name                                 : Artology
 app_price                                :
 app_description                          : "Identify artworks, preserve the details, and build a private record of the art that moves you."
