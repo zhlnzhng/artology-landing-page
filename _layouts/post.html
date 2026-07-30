@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body class="blog-body">
+    <div class="blog-container">
+        <!-- Header -->
+        <header class="blog-header">
+            <a href="/" class="blog-home-link">
+                <img src="/assets/darkicon.png" alt="Bookology" class="blog-logo">
+                <span class="blog-brand">Bookology</span>
+            </a>
+        </header>
+
+        <!-- Post Content -->
+        <main class="blog-main">
+            <article class="post">
+                <div class="post-header">
+                    <a href="/blog/" class="post-back-link">← Back to Blog</a>
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <div class="post-meta">
+                        <time class="post-date">{{ page.date | date: "%B %d, %Y" }}</time>
+                        {% if page.author %}
+                        <span class="post-author">by {{ page.author }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    {{ content }}
+                </div>
+
+                <div class="post-footer">
+                    <a href="/blog/" class="post-back-button">← Back to Blog</a>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+            <nav class="blog-footer-nav">
+                <a href="/" class="blog-footer-link">Home</a>
+                <a href="mailto:bookologyapp@gmail.com" class="blog-footer-link">Contact</a>
+                <a href="/privacypolicy/" class="blog-footer-link">Privacy Policy</a>
+            </nav>
+            <p class="blog-copyright">© 2025 Empty Studio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+

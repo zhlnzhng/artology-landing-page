@@ -1,0 +1,29 @@
+---
+layout: blog
+title: Blog
+---
+
+<div class="blog-intro">
+  <h1 class="blog-title">Blog</h1>
+  <p class="blog-description">Thoughts on reading, productivity, and building tools for lifelong learners.</p>
+</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <a href="{{ post.url }}" class="post-item-link">
+      <h2 class="post-item-title">{{ post.title }}</h2>
+      <div class="post-item-meta">
+        <time class="post-item-date">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% if post.author %}
+        <span class="post-item-author">{{ post.author }}</span>
+        {% endif %}
+      </div>
+      {% if post.excerpt %}
+      <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+    <div class="imageWrapper">
+        <div class="headerBackground">
+            <div class="container">
+                {% include header.html %}
+                <!-- Remove all the problematic includes -->
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
