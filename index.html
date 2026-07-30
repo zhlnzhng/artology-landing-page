@@ -1,103 +1,95 @@
 ---
-layout: bookology
+layout: artology
 ---
 
-<div class="bookology-landing">
-  <!-- Header Section -->
+<main class="artology-landing">
   <header class="hero-header">
     <div class="logo-container">
       <div class="logo-bars">
-        <img src="assets/darkicon.png" alt="Bookology Logo" class="logo-image">
+        <img src="{{ '/assets/artology-mark.svg' | relative_url }}" alt="" class="logo-image">
       </div>
-      <h1 class="brand-name">Bookology</h1>
+      <h1 class="brand-name">Artology</h1>
     </div>
-    
-    <h2 class="main-heading">The book tracker built for lifelong readers.</h2>
-    
-    <button class="cta-button" onclick="window.open('https://apps.apple.com/app/apple-store/id6747273681?pt=120196342&ct=Landing%20Page&mt=8', '_blank')">
-      <i class="fab fa-apple"></i>
-      Download for iOS
-    </button>
+
+    <h2 class="main-heading">Recognize the art you see. Remember what moved you.</h2>
+
+    {% if site.appstore_link %}
+      <a class="cta-button" href="{{ site.appstore_link }}" target="_blank" rel="noopener noreferrer">
+        Download for iOS
+      </a>
+    {% else %}
+      <span class="cta-button cta-button--disabled" aria-label="Artology for iOS is coming soon">
+        Coming soon for iOS
+      </span>
+    {% endif %}
   </header>
 
-  <!-- Hero Section with Background Image -->
-  <section class="hero-section" id="hero-section">
+  <section class="hero-section" id="hero-section" aria-label="Artology feature preview">
     <div class="app-mockup-container">
-      <div class="feature-nav">
-        <span class="feature-item active" data-image="assets/image00.jpg">Track</span>
-        <span class="feature-item" data-image="assets/image01.jpg">Organize</span>
-        <span class="feature-item" data-image="assets/image02.jpg">Timer</span>
-        <span class="feature-item" data-image="assets/image03.jpg">Stats</span>
-        <span class="feature-item" data-image="assets/image04.jpg">Goals</span>
+      <div class="feature-nav" aria-label="Preview an Artology feature">
+        <button type="button" class="feature-item active" data-image="{{ '/assets/image00.jpg' | relative_url }}" aria-pressed="true">Recognize</button>
+        <button type="button" class="feature-item" data-image="{{ '/assets/image01.jpg' | relative_url }}" aria-pressed="false">Collect</button>
+        <button type="button" class="feature-item" data-image="{{ '/assets/image02.jpg' | relative_url }}" aria-pressed="false">Details</button>
+        <button type="button" class="feature-item" data-image="{{ '/assets/image03.jpg' | relative_url }}" aria-pressed="false">Visits</button>
+        <button type="button" class="feature-item" data-image="{{ '/assets/image04.jpg' | relative_url }}" aria-pressed="false">Sync</button>
       </div>
     </div>
   </section>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const featureItems = document.querySelectorAll('.feature-item');
       const heroSection = document.getElementById('hero-section');
-      
-      // Preload all images for smooth transitions
-      const images = [
-        'assets/image00.jpg',
-        'assets/image01.jpg',
-        'assets/image02.jpg',
-        'assets/image03.jpg',
-        'assets/image04.jpg'
-      ];
-      
-      images.forEach(src => {
-        const img = new Image();
-        img.src = src;
+
+      featureItems.forEach(function (item) {
+        const imagePath = item.getAttribute('data-image');
+        const image = new Image();
+        image.src = imagePath;
+
+        item.addEventListener('click', function () {
+          if (item.classList.contains('active')) return;
+
+          featureItems.forEach(function (featureItem) {
+            featureItem.classList.remove('active');
+            featureItem.setAttribute('aria-pressed', 'false');
+          });
+
+          item.classList.add('active');
+          item.setAttribute('aria-pressed', 'true');
+          heroSection.style.backgroundImage = "url('" + imagePath + "')";
+        });
       });
-      
-                      featureItems.forEach(item => {
-                    item.addEventListener('click', function() {
-                        // Prevent multiple rapid clicks
-                        if (this.classList.contains('active')) return;
-                        
-                        // Remove active class from all items
-                        featureItems.forEach(i => i.classList.remove('active'));
-                        
-                        // Add active class to clicked item
-                        this.classList.add('active');
-                        
-                        // Change background image with smooth transition
-                        const imagePath = this.getAttribute('data-image');
-                        heroSection.style.backgroundImage = `url('${imagePath}')`;
-                    });
-                });
     });
   </script>
 
-  <!-- Content Sections -->
   <section class="content-section">
     <p class="content-text">
-      Bookology helps you organize your books into a personal library you'll love returning to, while guiding you to build a lasting reading habit.
+      Point your camera at an artwork—or choose a photo—and Artology helps you uncover its title, artist, date, medium, and story.
     </p>
   </section>
 
   <section class="content-section">
     <p class="content-text">
-      It is a place to collect, track, and celebrate your books so reading becomes not just something you do but part of who you are.
+      Save the pieces that stay with you, add your own notes and photos, and turn every museum visit into a private collection you can return to.
     </p>
   </section>
 
-  <!-- Footer Section -->
   <footer class="footer-section">
-    <button class="cta-button" onclick="window.open('https://apps.apple.com/app/apple-store/id6747273681?pt=120196342&ct=Landing%20Page&mt=8', '_blank')">
-      <i class="fab fa-apple"></i>
-      Download for iOS
-    </button>
-    
-    <nav class="footer-nav">
-      <a href="/blog/" class="footer-link">Blog</a>
-      <a href="mailto:bookologyapp@gmail.com" class="footer-link">Contact</a>
-      <a href="#" class="footer-link">Press Kit</a>
-      <a href="https://bookology.app/privacypolicy/" class="footer-link">Privacy Policy</a>
+    {% if site.appstore_link %}
+      <a class="cta-button" href="{{ site.appstore_link }}" target="_blank" rel="noopener noreferrer">
+        Download for iOS
+      </a>
+    {% else %}
+      <span class="cta-button cta-button--disabled" aria-label="Artology for iOS is coming soon">
+        Coming soon for iOS
+      </span>
+    {% endif %}
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="mailto:artologyapp@gmail.com" class="footer-link">Contact</a>
+      <a href="{{ '/privacypolicy/' | relative_url }}" class="footer-link">Privacy Policy</a>
     </nav>
-    
+
     <p class="copyright">Made by Empty Studio</p>
   </footer>
-</div>
+</main>

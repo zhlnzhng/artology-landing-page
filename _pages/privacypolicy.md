@@ -1,119 +1,146 @@
 ---
 layout: page
 title: Privacy Policy
+description: "How Artology handles collection data, artwork-recognition images, permissions, subscriptions, and privacy requests."
 include_in_header: false
 ---
 
-**Last updated**  
-July 1, 2025
+**Last updated:** July 30, 2026
+
+**Effective date:** July 30, 2026
 
 # Privacy Policy
 
-**Effective Date:** July 1, 2025
+This Privacy Policy explains how Artology ("Artology," "we," "us," or "our") handles information when you use the Artology mobile application, visit artology.app, or contact us. Artology is developed and operated by Empty Studio.
 
-Thank you for using Bookology! This Privacy Policy explains how we collect, use, and protect your personal information. By using our app, you agree to the practices described in this policy.
+If you have questions or want to exercise a privacy right, email us at **artologyapp@gmail.com**.
 
-## 1. About Us
+## 1. Information We Handle
 
-Bookology is developed and operated by Empty Studio.
+### 1.1 Your collection
 
-* **Developer:** Empty Studio
-* **Contact Email:** bookologyapp@gmail.com
-* **Website:** https://bookology.app/
+Artology lets you create a personal record of art that matters to you. Depending on how you use the app, your collection may include:
 
-## 2. Information We Collect
+* Artwork titles, creators, dates, media, dimensions, styles, institutions, sources, and descriptions
+* Notes and other text you add
+* Photos and related photo metadata
+* Visit records, venues, dates, and locations
+* Edits you make to suggested artwork information
 
-### 2.1 Information You Provide
+Your saved collection is stored in the app's private storage on your device. If device-to-device sync is available and enabled, a copy may also be stored in the private cloud storage connected to your platform account.
 
-We do not collect specific book content, titles, authors, or your personal notes and reviews. All your book data remains private and stored only on your device and in your iCloud account.
+### 1.2 Photos and artwork recognition
 
-### 2.2 Automatically Collected Information
+When you choose to recognize an artwork, Artology processes the image you take or select and sends it to our service providers so that we can return a suggested identification and supporting artwork information. This may include the artwork image, a cropped or compressed version of it, and technical request data.
 
-* **App Usage Data:** Application usage analytics collected through Mixpanel analytics service (such as feature usage frequency, app launches, number of books added, number of reading lists created, etc.)
-* **Device Information:** Device type, operating system version, app version, and other technical information
-* **IP Address:** When you use online search features, third-party services (Google Books, NeoDB) may record your IP address
+Artology does not send your saved notes or the rest of your collection as part of an artwork-recognition request. Recognition results are suggestions; you can review and edit them before saving.
 
-### 2.3 iCloud Sync Data
+### 1.3 Camera, photo library, and location
 
-* If you are a Pro user, your book data is synced across your devices through Apple CloudKit
-* This data is entirely processed by Apple Inc., and we cannot access your iCloud data
+With your permission, Artology may access:
 
-## 3. How We Use Information
+* **Camera:** to take an artwork photo
+* **Photo library:** to load an image you select or save an image you request
+* **Location:** to attach a place to a photo or visit and help organize your art record
 
-We use the collected information to:
+You can deny or revoke these permissions in your device settings. Artology does not continuously track your location.
 
-* **Provide Services:** Deliver core features like book management and reading tracking
-* **Improve Product:** Analyze app usage to improve user experience and functionality
-* **Technical Support:** Diagnose technical issues and provide customer support
-* **Online Search:** Call third-party APIs (Google Books, NeoDB) to search for book information
+### 1.4 Service, subscription, and diagnostic data
 
-## 4. Information Sharing
+We may process limited technical data needed to operate and protect the service, including:
 
-We do not sell, trade, or otherwise transfer your personal information to third parties, except:
+* A pseudonymous app or customer identifier
+* Subscription status and entitlement dates; we do not receive your full payment-card details
+* Scan and search counts used to apply plan limits
+* Request identifiers, app version, timestamps, response status, and error information
+* IP address or a derived value, and an approximate country or region, for security, rate limiting, fraud prevention, and service availability
+* Basic website request logs created when you visit artology.app
 
-* **Third-Party Services:** We use the following third-party services that may collect certain information:  
-   * **Mixpanel:** For app analytics and usage statistics  
-   * **RevenueCat:** For subscription management (only processes subscription status, no personal information)  
-   * **Apple CloudKit:** For Pro user data synchronization  
-   * **Google Books API / NeoDB API:** For online book searches
-* **Legal Requirements:** When required by law or to protect our rights
+We do not use this data to build an advertising profile.
 
-## 5. Data Security
+### 1.5 Information you send us
 
-We implement reasonable security measures to protect your information:
+If you contact us, we receive the information included in your message, such as your email address, the content of your request, and any files you choose to attach.
 
-* Data is encrypted and stored on your device
-* Data transmission occurs through secure HTTPS connections
-* We regularly update security measures to address new threats
+## 2. How We Use Information
 
-## 6. Data Retention
+We use information to:
 
-* **Local Data:** Stored on your device until you delete the app or manually delete data
-* **Analytics Data:** Usage statistics in Mixpanel are retained according to their data retention policy
-* **After Uninstallation:** Historical data in analytics services may continue to be retained after app uninstallation
+* Provide artwork recognition, collection management, search, sync, export, and subscription features
+* Save and display the content you choose to add to your collection
+* Apply usage limits and verify access to paid features
+* Maintain reliability, prevent abuse, secure the service, and troubleshoot problems
+* Respond to support requests and feedback
+* Comply with law and enforce our rights
+* Improve Artology using aggregated or de-identified operational insights
 
-## 7. Your Rights
+We do not sell your personal information. We do not share it for cross-context behavioral advertising, and we do not use your collection or recognition images to serve you ads.
 
-### 7.1 Data Control
+## 3. When Information Is Shared
 
-* **Access:** You can view and export personal data in the app at any time
-* **Modify:** You can edit or delete book data in the app at any time
-* **Delete:** You can clear all data on your device by deleting the app
+We disclose information only as described below:
 
-### 7.2 Data Deletion Requests
+* **Service providers:** We use providers that perform functions such as private cloud synchronization, artwork recognition and information retrieval, subscription processing, hosting, security, and customer support. They receive only the information reasonably necessary to perform their services and are required to protect it consistently with this policy and applicable law.
+* **Legal and safety reasons:** We may disclose information if reasonably necessary to comply with law, respond to valid legal process, protect a person's safety, prevent fraud or abuse, or protect our rights.
+* **Business changes:** If Artology is involved in a merger, acquisition, financing, reorganization, or sale of assets, information may be transferred as part of that transaction, subject to appropriate safeguards and notice where required.
 
-We currently do not provide automated data deletion tools. If you need to delete data from analytics services, please contact us at bookologyapp@gmail.com, and we will assist you with deletion requests.
+We do not allow service providers to use your collection or recognition images for their own advertising.
 
-### 7.3 Analytics Tracking
+## 4. Storage and Retention
 
-The app currently does not provide an option to disable analytics tracking. We plan to add this feature in future versions.
+We keep information only for as long as reasonably necessary for the purposes described in this policy:
+
+* **Collection data:** Remains on your device and, if sync is enabled, in your platform account's private cloud storage until you delete it through the app or the relevant platform controls. Uninstalling the app may not automatically remove a cloud-synced copy.
+* **Recognition images:** Processed when you request recognition. When our service needs a short-lived hosted copy to complete a request, that copy is configured to expire within 30 minutes. Service providers may retain limited request data only as permitted by their agreements with us or as required by law.
+* **Recognition results and request records:** Limited response data may be cached for up to 48 hours so a request can be completed reliably or retried. Pseudonymous usage totals, subscription records, and security records may be kept longer where needed to provide entitlements, enforce plan limits, prevent abuse, resolve disputes, or meet legal obligations.
+* **Support messages:** Kept for as long as needed to respond, maintain support history, and comply with legal obligations.
+* **Backups and logs:** May remain for a limited period under routine security and backup schedules before being deleted or overwritten.
+
+We may retain aggregated or de-identified information that cannot reasonably be linked to you.
+
+## 5. Your Choices and Rights
+
+Depending on where you live, you may have the right to request access to, correction of, deletion of, or a portable copy of personal information; to object to or restrict certain processing; to withdraw consent; and to appeal or complain to a privacy regulator.
+
+You can also:
+
+* Review, edit, and delete collection items in Artology
+* Export your collection metadata from Settings
+* Control camera, photo-library, and location access in device settings
+* Manage or cancel a subscription through your platform account settings
+* Contact us at **artologyapp@gmail.com** to request help with data associated with Artology's online services
+
+We may need to verify your request before acting on it. Some information may be retained where required by law or where necessary for security, fraud prevention, billing, or the establishment, exercise, or defense of legal claims.
+
+## 6. Legal Bases for Processing
+
+Where applicable law requires a legal basis, we rely on:
+
+* **Performance of a contract:** to provide the features and services you request
+* **Legitimate interests:** to secure, maintain, support, and improve Artology, provided those interests are not overridden by your rights
+* **Consent:** for device permissions and other processing where consent is required; you may withdraw consent through device settings or by contacting us
+* **Legal obligations:** when processing is necessary to comply with law
+
+## 7. International Processing
+
+Artology and its service providers may process information in countries other than the one where you live. Where required, we use appropriate safeguards for international transfers of personal information.
 
 ## 8. Children's Privacy
 
-Bookology is primarily intended for teenagers and adults. We do not knowingly collect personal information from children under 13. If we discover that we have collected such information, we will delete it immediately.
+Artology is a general-audience service and is not directed to children under 13. We do not knowingly collect personal information online from a child under 13. If you believe a child has provided personal information to Artology, contact us at **artologyapp@gmail.com** so we can review and delete it as appropriate.
 
-## 9. International Data Transfers
+## 9. Security
 
-Since we use third-party services (such as Mixpanel) that may store data in different countries, your information may be transferred to locations outside your country/region. We ensure these transfers comply with applicable data protection laws.
+We use reasonable administrative, technical, and organizational safeguards designed to protect information. No method of storage or transmission is completely secure, so we cannot guarantee absolute security.
 
-## 10. Legal Basis (GDPR Applicable)
+## 10. Changes to This Policy
 
-For EU users, our legal basis for processing your personal data includes:
+We may update this Privacy Policy to reflect changes to Artology, our practices, or applicable law. We will update the date at the top and provide additional notice when required.
 
-* **Contract Performance:** To provide app services to you
-* **Legitimate Interests:** To improve products and provide technical support
-* **Consent:** Your use of the app indicates consent to data processing
+## 11. Contact Us
 
-## 11. Policy Updates
+For privacy questions or requests, contact:
 
-We may update this Privacy Policy from time to time. For significant changes, we will notify you within the app. We recommend reviewing this policy regularly to stay informed of updates.
-
-## 12. Contact Us
-
-If you have any questions or concerns about this Privacy Policy, please contact us:
-
-**Email:** bookologyapp@gmail.com
-
-**Website:** https://bookology.app/
-
-This Privacy Policy was last updated: July 1, 2025
+**Empty Studio / Artology**<br>
+**Email:** artologyapp@gmail.com<br>
+**Website:** https://artology.app/
