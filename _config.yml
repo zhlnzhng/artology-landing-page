@@ -3,16 +3,16 @@ url                                      : "https://artology.app"
 page_title                               : "Artology — Recognize Art. Remember What Moved You."
 
 # App information
-ios_app_id                               :
+ios_app_id                               : 6793061670
 ios_app_country                          : us
-appstore_link                            :
+appstore_link                            : https://apps.apple.com/us/app/artology-art-identifier/id6793061670
 playstore_link                           :
 presskit_download_link                   :
 app_icon                                 : assets/artologylandingpageicon.png
 app_name                                 : Artology
 app_price                                :
 app_description                          : "Identify artworks, preserve the details, and build a private record of the art that moves you."
-enable_smart_app_banner                   : false
+enable_smart_app_banner                   : true
 
 # Studio and contact
 your_name                                : Empty Studio
